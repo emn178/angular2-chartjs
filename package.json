@@ -1,10 +1,12 @@
 {
   "name": "angular2-chartjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Chart.js component for Angular2",
-  "main": "index.ts",
-  "typings": "index",
+  "main": "dist/index.js",
+  "typings": "src/index.ts",
   "scripts": {
+    "build": "npm run clean;tsc",
+    "clean": "rm -rf dist/*",
     "start": "webpack-dev-server --progress --profile --colors --watch --display-error-details --display-cached --content-base dev/",
     "postinstall": "typings install"
   },

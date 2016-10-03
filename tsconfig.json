@@ -1,20 +1,22 @@
 {
   "compilerOptions": {
-    "outDir": "build",
+    "outDir": "dist",
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "inlineSourceMap": false,
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": true,
     "noImplicitAny": false
   },
+  "files": [
+    "typings/index.d.ts",
+    "src/index.ts"
+  ],
   "exclude": [
     "node_modules",
-    "dist",
-    "reports"
+    "dist"
   ],
   "compileOnSave": false,
   "buildOnSave": false
