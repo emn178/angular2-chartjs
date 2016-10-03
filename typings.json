@@ -1,0 +1,7 @@
+{
+  "globalDependencies": {
+    "chart.js": "registry:dt/chart.js#0.0.0+20160914124927",
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "node": "registry:dt/node#6.0.0+20160621231320"
+  }
+}

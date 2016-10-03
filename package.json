@@ -1,0 +1,44 @@
+{
+  "name": "angular2-chartjs",
+  "version": "0.1.0",
+  "description": "Chart.js component for Angular2",
+  "main": "index.ts",
+  "typings": "index",
+  "scripts": {
+    "start": "webpack-dev-server --progress --profile --colors --watch --display-error-details --display-cached --content-base dev/",
+    "postinstall": "typings install"
+  },
+  "dependencies": {
+    "@angular/common": "2.0.1",
+    "@angular/compiler": "2.0.1",
+    "@angular/core": "2.0.1",
+    "chart.js": "^2.3.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "typescript": "^2.0.3",
+    "zone.js": "^0.6.25"
+  },
+  "author": "Chen, Yi-Cyuan <emn178@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/platform-browser": "2.0.1",
+    "@angular/platform-browser-dynamic": "2.0.1",
+    "ts-loader": "^0.8.2",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emn178/angular2-chartjs.git"
+  },
+  "keywords": [
+    "chart",
+    "angular2"
+  ],
+  "homepage": "https://github.com/emn178/angular2-chartjs",
+  "bugs": {
+    "url": "https://github.com/emn178/angular2-chartjs/issues"
+  }
+}
