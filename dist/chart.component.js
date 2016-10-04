@@ -20,6 +20,16 @@ var ChartComponent = (function () {
             options: this.options
         });
     };
+    ChartComponent.prototype.ngOnChanges = function (changes) {
+        var _this = this;
+        if (this.chart && changes['data']) {
+            var currentValue_1 = changes['data'].currentValue;
+            ['datasets', 'labels', 'xLabels', 'yLabels'].forEach(function (property) {
+                _this.chart.data[property] = currentValue_1[property];
+            });
+            this.chart.update();
+        }
+    };
     __decorate([
         core_1.Input(), 
         __metadata('design:type', String)
