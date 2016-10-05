@@ -8,6 +8,19 @@ npm install angular2-chartjs
 ```
 
 ## Usage
+Add `ChartModule` to your module, eg.
+```JavaScript
+import { ChartModule } from 'angular2-chartjs';
+
+@NgModule({
+  imports: [ ChartModule ]
+  // ...
+})
+export class AppModule {
+}
+```
+And you can use selector `chart` in your template.
+
 JavaScript
 ```JavaScript
 type = 'line'
