@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.1.4 / 2016-10-13
+### Fixed
+- dependencies problem in some cases.
+
 ## v0.1.3 / 2016-10-05
 ### Fixed
 - typings path in package.json.

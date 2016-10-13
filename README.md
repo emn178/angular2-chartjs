@@ -43,6 +43,23 @@ HTML
 <chart [type]="type" [data]="data" [options]="options"></chart>
 ```
 
+## SystemJs
+Add following settings
+```JavaScript
+{
+  map: {
+    'angular2-chartjs': 'npm:angular2-chartjs',
+    'chart.js': 'npm:chart.js/dist/Chart.bundle.js'
+  },
+  packages: {
+    'angular2-chartjs': {
+      main: './dist/index.js',
+      defaultExtension: 'js'
+    }
+  }
+}
+```
+
 ## License
 The project is released under the [MIT license](http://www.opensource.org/licenses/MIT).
 
