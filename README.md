@@ -23,7 +23,7 @@ And you can use selector `chart` in your template.
 
 JavaScript
 ```JavaScript
-type = 'line'
+type = 'line';
 data = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
@@ -32,15 +32,38 @@ data = {
       data: [65, 59, 80, 81, 56, 55, 40]
     }
   ]
-}
+};
 options = {
   responsive: true,
   maintainAspectRatio: false
-}
+};
 ```
 HTML
 ```HTML
 <chart [type]="type" [data]="data" [options]="options"></chart>
+```
+
+## Options
+### [type]
+*string*, required  
+Chart type.
+
+### [data]
+*object*, required  
+To display data, the chart must be passed a data object that contains all of the information needed by the chart. [See](http://www.chartjs.org/docs/#chart-configuration-chart-data).
+
+### [options]
+*object*, optional  
+To create a chart with configuration options, simply pass an object containing your configuration to the constructor. [See](http://www.chartjs.org/docs/#chart-configuration-creating-a-chart-with-options).
+
+## Members
+### chart
+*Chart*  
+Chart instance. You can call Chart.js methods via this member.
+
+Example:
+```JavaScript
+chartComponent.chart.destroy();
 ```
 
 ## SystemJs

@@ -1,11 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ChartComponent } from '../src';
 
 @Component({
   selector: 'app',
   template: '<button (click)="change()">Change</button><chart [type]="type" [data]="data" [options]="options"></chart>'
 })
 export class AppComponent {
-  type = 'line'
+  @ViewChild(ChartComponent) chartComponent: ChartComponent;
+
+  type = 'line';
   data = {
     labels: ["January", "February", "March", "April", "May", "June", "July"],
     datasets: [
@@ -14,11 +17,11 @@ export class AppComponent {
         data: [65, 59, 80, 81, 56, 55, 40]
       }
     ]
-  }
+  };
   options = {
     responsive: true,
     maintainAspectRatio: false
-  }
+  };
 
   constructor() {
   }

@@ -6,7 +6,7 @@ import { Component, Input, ElementRef, OnInit, OnChanges, SimpleChanges } from '
   styles: [':host { display: block; }']
 })
 export class ChartComponent implements OnInit, OnChanges  {
-  private chart: any;
+  chart: any;
 
   @Input() type: string;
   @Input() data: any;

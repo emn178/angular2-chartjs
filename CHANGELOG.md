@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.1.5 / 2016-10-24
+### Added
+- exposed chart instance.
+
 ## v0.1.4 / 2016-10-13
 ### Fixed
 - dependencies problem in some cases.
