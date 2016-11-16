@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.1.6 / 2016-11-16
+### Fixed
+- issuse #1 for Ionic2.
+
 ## v0.1.5 / 2016-10-24
 ### Added
 - exposed chart instance.
