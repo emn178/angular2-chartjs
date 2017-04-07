@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.2.0 / 2017-04-07
+### Added
+- angular 4 peer dependencies.
+
 ## v0.1.6 / 2016-11-16
 ### Fixed
 - issuse #1 for Ionic2.

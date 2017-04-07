@@ -1,17 +1,18 @@
 {
   "name": "angular2-chartjs",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "Chart.js component for Angular2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
     "build": "rm -rf dist/*;ngc && mv src/*.ngfactory.ts dist/",
+    "prepublish": "npm run build",
     "start": "webpack-dev-server --progress --profile --colors --watch --display-error-details --display-cached --content-base dev/"
   },
   "peerDependencies": {
-    "@angular/common": "^2.0.0",
-    "@angular/compiler": "^2.0.0",
-    "@angular/core": "^2.0.0"
+    "@angular/common": "^4.0.0 || ^2.0.0",
+    "@angular/compiler": "^4.0.0 || ^2.0.0",
+    "@angular/core": "^4.0.0 || ^2.0.0"
   },
   "dependencies": {
     "chart.js": "^2.3.0"

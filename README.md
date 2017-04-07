@@ -1,5 +1,5 @@
 # angular2-chartjs
-Chart.js component for Angular2
+Chart.js component for Angular2+
 
 ## Installation
 You can install angular2-chartjs by using npm.
