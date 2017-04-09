@@ -11,11 +11,21 @@ export class ChartComponent implements OnInit, OnChanges  {
   @Input() type: string;
   @Input() data: any;
   @Input() options: any;
+  @Input() height: number;
+  @Input() width: number;
 
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
-    this.chart = new Chart(this.elementRef.nativeElement.querySelector('canvas'), {
+    let canvas = this.elementRef.nativeElement.querySelector('canvas');
+    if(!!this.height) {
+      canvas.setAttribute('height', this.height);
+    }
+    if(!!this.width) {
+      canvas.setAttribute('width', this.width);
+
+    }
+    this.chart = new Chart(canvas, {
       type: this.type,
       data: this.data,
       options: this.options

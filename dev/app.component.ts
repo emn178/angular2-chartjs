@@ -3,7 +3,7 @@ import { ChartComponent } from '../src';
 
 @Component({
   selector: 'app',
-  template: '<button (click)="change()">Change</button><chart [type]="type" [data]="data" [options]="options"></chart>'
+  template: '<button (click)="change()">Change</button><chart [type]="type" [data]="data" [options]="options" [height]="300"></chart>'
 })
 export class AppComponent {
   @ViewChild(ChartComponent) chartComponent: ChartComponent;
