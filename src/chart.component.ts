@@ -15,20 +15,28 @@ export class ChartComponent implements OnInit, OnChanges  {
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit() {
+    this.create();
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    if (this.chart) {
+      if (changes['type'] || changes['options']) {
+        this.create();
+      } else if (changes['data']) {
+        let currentValue = changes['data'].currentValue;
+        ['datasets', 'labels', 'xLabels', 'yLabels'].forEach(property => {
+          this.chart.data[property] = currentValue[property];
+        })
+        this.chart.update();
+      }
+    }
+  }
+
+  private create() {
     this.chart = new Chart(this.elementRef.nativeElement.querySelector('canvas'), {
       type: this.type,
       data: this.data,
       options: this.options
     });
-  }
-
-  ngOnChanges(changes: SimpleChanges) {
-    if (this.chart && changes['data']) {
-      let currentValue = changes['data'].currentValue;
-      ['datasets', 'labels', 'xLabels', 'yLabels'].forEach(property => {
-        this.chart.data[property] = currentValue[property];
-      })
-      this.chart.update();
-    }
   }
 }

@@ -83,6 +83,9 @@ Add following settings
 }
 ```
 
+## FAQ
+How to call Chart.js methods - [#7](https://github.com/emn178/angular2-chartjs/issues/7), [#2](https://github.com/emn178/angular2-chartjs/issues/2)
+
 ## License
 The project is released under the [MIT license](http://www.opensource.org/licenses/MIT).
 

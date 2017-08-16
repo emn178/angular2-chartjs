@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.3.0 / 2017-08-16
+### Changed
+- change type and options will re-create chart.
+
 ## v0.2.0 / 2017-04-07
 ### Added
 - angular 4 peer dependencies.

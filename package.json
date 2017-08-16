@@ -1,6 +1,6 @@
 {
   "name": "angular2-chartjs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Chart.js component for Angular2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -20,21 +20,21 @@
   "author": "Chen, Yi-Cyuan <emn178@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@angular/common": "~2.2.0",
-    "@angular/compiler": "~2.2.0",
-    "@angular/compiler-cli": "~2.2.0",
-    "@angular/core": "~2.2.0",
-    "@angular/platform-browser": "~2.2.0",
-    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/common": "2.4.10",
+    "@angular/compiler": "2.4.10",
+    "@angular/compiler-cli": "2.4.10",
+    "@angular/core": "2.4.10",
+    "@angular/platform-browser": "2.4.10",
+    "@angular/platform-browser-dynamic": "2.4.10",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
-    "rxjs": "5.0.0-beta.12",
+    "rxjs": "5.4.3",
     "ts-loader": "^0.8.2",
     "typescript": "^2.0.3",
     "typings": "^1.4.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1",
-    "zone.js": "^0.6.25"
+    "zone.js": "0.7.2"
   },
   "repository": {
     "type": "git",
