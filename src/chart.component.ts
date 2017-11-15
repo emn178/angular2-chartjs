@@ -1,8 +1,10 @@
 import { Component, Input, ElementRef, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
+declare var Chart;
+
 @Component({
   selector: 'chart',
-  template: '<canvas></canvas>',
+  template: '',
   styles: [':host { display: block; }']
 })
 export class ChartComponent implements OnInit, OnChanges  {
@@ -11,6 +13,8 @@ export class ChartComponent implements OnInit, OnChanges  {
   @Input() type: string;
   @Input() data: any;
   @Input() options: any;
+
+  private canvas;
 
   constructor(private elementRef: ElementRef) { }
 
@@ -33,7 +37,12 @@ export class ChartComponent implements OnInit, OnChanges  {
   }
 
   private create() {
-    this.chart = new Chart(this.elementRef.nativeElement.querySelector('canvas'), {
+    if (this.canvas) {
+      this.elementRef.nativeElement.removeChild(this.canvas);
+    }
+    this.canvas = document.createElement('canvas');
+    this.elementRef.nativeElement.appendChild(this.canvas);
+    this.chart = new Chart(this.canvas, {
       type: this.type,
       data: this.data,
       options: this.options

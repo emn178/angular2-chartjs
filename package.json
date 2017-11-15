@@ -1,18 +1,19 @@
 {
   "name": "angular2-chartjs",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Chart.js component for Angular2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist/*;ngc && mv src/*.ngfactory.ts dist/",
+    "build": "rm -rf dist/*;ngc && mv src/*.ngfactory.ts dist/ && mv src/*.ngsummary.json dist/",
+    "build:demo": "cd dev && ngc",
     "prepublish": "npm run build",
     "start": "webpack-dev-server --progress --profile --colors --watch --display-error-details --display-cached --content-base dev/"
   },
   "peerDependencies": {
-    "@angular/common": "^4.0.0 || ^2.0.0",
-    "@angular/compiler": "^4.0.0 || ^2.0.0",
-    "@angular/core": "^4.0.0 || ^2.0.0"
+    "@angular/common": ">=4.0.0 || ^2.0.0",
+    "@angular/compiler": ">=4.0.0 || ^2.0.0",
+    "@angular/core": ">=4.0.0 || ^2.0.0"
   },
   "dependencies": {
     "chart.js": "^2.3.0"
@@ -26,12 +27,14 @@
     "@angular/core": "2.4.10",
     "@angular/platform-browser": "2.4.10",
     "@angular/platform-browser-dynamic": "2.4.10",
+    "@types/chart.js": "^2.6.13",
+    "@types/core-js": "^0.9.43",
+    "@types/node": "^8.0.52",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.4.3",
     "ts-loader": "^0.8.2",
     "typescript": "^2.0.3",
-    "typings": "^1.4.0",
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.1",
     "zone.js": "0.7.2"

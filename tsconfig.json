@@ -9,10 +9,16 @@
     "experimentalDecorators": true,
     "removeComments": true,
     "noImplicitAny": false,
-    "declaration": true
+    "declaration": true,
+    "types": [
+      "node"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ]
   },
   "files": [
-    "typings/index.d.ts",
     "src/index.ts"
   ],
   "exclude": [
