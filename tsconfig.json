@@ -26,5 +26,9 @@
     "dist"
   ],
   "compileOnSave": false,
-  "buildOnSave": false
+  "buildOnSave": false,
+  "angularCompilerOptions": {
+    "genDir": "dist",
+    "skipTemplateCodegen": true
+  }
 }

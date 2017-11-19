@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.4.1 / 2017-11-19
+### Fixed
+- angular 5 aot build.
+
 ## v0.4.0 / 2017-11-15
 ### Fixed
 - `Responsive` seems to be broken when used with chart.js >= 2.7.0 #26

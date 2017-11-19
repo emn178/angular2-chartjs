@@ -1,11 +1,11 @@
 {
   "name": "angular2-chartjs",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Chart.js component for Angular2",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "scripts": {
-    "build": "rm -rf dist/*;ngc && mv src/*.ngfactory.ts dist/ && mv src/*.ngsummary.json dist/",
+    "build": "rm -rf dist/*;ngc",
     "build:demo": "cd dev && ngc",
     "prepublish": "npm run build",
     "start": "webpack-dev-server --progress --profile --colors --watch --display-error-details --display-cached --content-base dev/"
