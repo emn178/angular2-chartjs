@@ -26,7 +26,8 @@ export class ChartComponent implements OnInit, OnChanges  {
     if (this.chart) {
       if (changes['type'] || changes['options']) {
         this.create();
-      } else if (changes['data']) {
+      } 
+      if (changes['data']) {
         let currentValue = changes['data'].currentValue;
         ['datasets', 'labels', 'xLabels', 'yLabels'].forEach(property => {
           this.chart.data[property] = currentValue[property];
