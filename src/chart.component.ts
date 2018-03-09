@@ -23,7 +23,7 @@ export class ChartComponent implements OnInit, OnChanges  {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log('on change event from chart comp', chnages);
+    console.log('on change event from chart comp', changes);
     if (this.chart) {
       if (changes['type'] || changes['options']) {
         this.create();
