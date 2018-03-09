@@ -1,7 +1,5 @@
 node_modules/
 typings/
-dev/
-src/
 tsconfig.json
 webpack.config.js
 .npmignore
