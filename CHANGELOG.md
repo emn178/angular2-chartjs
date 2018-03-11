@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.5.0 / 2018-03-17
+### Added
+- events `clickCanvas`, `clickDataset`, `clickElements` and `clickElement`.
+
 ## v0.4.1 / 2017-11-19
 ### Fixed
 - angular 5 aot build.

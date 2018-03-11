@@ -56,6 +56,23 @@ To display data, the chart must be passed a data object that contains all of the
 *object*, optional  
 To create a chart with configuration options, simply pass an object containing your configuration to the constructor. [See](http://www.chartjs.org/docs/#chart-configuration-creating-a-chart-with-options).
 
+## Events
+### (clickCanvas)
+*Event*  
+Return click event.
+
+### (clickDataset)
+*Array*  
+Return the clicked dataset array.
+
+### (clickElement)
+*Array*  
+Return the clicked element in array.
+
+### (clickElements)
+*Array*  
+Return the clicked elements in array.
+
 ## Members
 ### chart
 *Chart*  
