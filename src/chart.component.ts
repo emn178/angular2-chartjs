@@ -31,10 +31,20 @@ export class ChartComponent implements OnInit, OnChanges {
       if (changes['type'] || changes['options']) {
         this.create();
       } else if (changes['data']) {
-        let currentValue = changes['data'].currentValue;
-        ['datasets', 'labels', 'xLabels', 'yLabels'].forEach(property => {
+        const currentValue = changes['data'].currentValue;
+        ['labels', 'xLabels', 'yLabels'].forEach(property => {
           this.chart.data[property] = currentValue[property];
-        })
+        });
+        if (currentValue.datasets) {
+          for (let i = 0; i < currentValue.datasets.length; i++) {
+            if (!this.chart.data.datasets[i].data || this.chart.data.datasets[i].data.length < 1) {
+              this.chart.data.datasets[i] = currentValue.datasets[i];
+            } else {
+              this.chart.data.datasets[i].data = currentValue.datasets[i].data;
+            }
+          }
+        }
+
         this.chart.update();
       }
     }
