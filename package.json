@@ -11,7 +11,7 @@
     "start": "webpack-dev-server --progress --profile --colors --watch --display-error-details --display-cached --content-base dev/"
   },
   "peerDependencies": {
-    "chart.js": ">= 2.7 < 3",
+    "chart.js": ">= 2 < 3",
     "@angular/common": ">=4.0.0 || ^2.0.0",
     "@angular/compiler": ">=4.0.0 || ^2.0.0",
     "@angular/core": ">=4.0.0 || ^2.0.0"
